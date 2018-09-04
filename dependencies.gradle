@@ -1,0 +1,31 @@
+ext {
+    // Android
+    androidCompileSdkVersion = 28
+    androidBuildToolsVersion = '27.0.3'
+
+    androidMinSdkVersion = 14
+    androidTargetSdkVersion = 28
+
+    // Google
+    supportLibraryVersion = '25.3.1'
+
+    // View
+    constraintLayoutVersion = '1.0.2'
+
+    // Sample Delegator
+    sampleDelegatorVersion = '1.0'
+
+    libDependencies = [
+            // Kotlin
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    ]
+
+    sampleDependencies = [
+            // Kotlin
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+
+            // Android
+            appCompat         : "com.android.support:appcompat-v7:$supportLibraryVersion",
+            supportAnnotations: "com.android.support:support-annotations:$supportLibraryVersion",
+    ]
+}

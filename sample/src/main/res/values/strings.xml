@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DrakeSample</string>
+    <string name="main_zero_title">zero title</string>
+    <string name="main_zero_description">zero description</string>
+</resources>
