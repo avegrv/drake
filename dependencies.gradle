@@ -12,12 +12,15 @@ ext {
     // View
     constraintLayoutVersion = '1.0.2'
 
-    // Sample Delegator
-    sampleDelegatorVersion = '1.0'
+    // Test
+    junitVersion = '4.12'
 
     libDependencies = [
             // Kotlin
-            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+
+            // Test
+            junit             : "junit:junit:$junitVersion"
     ]
 
     sampleDependencies = [

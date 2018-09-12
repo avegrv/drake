@@ -27,9 +27,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':drake-android')
-
     def deps = rootProject.ext.sampleDependencies
 
     implementation deps.kotlin
