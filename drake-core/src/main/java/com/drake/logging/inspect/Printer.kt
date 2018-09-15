@@ -1,9 +1,8 @@
 package com.drake.logging.inspect
 
 import java.lang.reflect.Array
-import java.util.*
 
-internal class Printer(private val source: Any?) {
+class Printer(private val source: Any?) {
 
     private val s = StringBuilder()
 
@@ -63,7 +62,7 @@ internal class Printer(private val source: Any?) {
         return this
     }
 
-    private fun printList(it: Iterable<*>): Printer {
+    fun printList(it: Iterable<*>): Printer {
         s.append("List[")
         var first = true
         try {
@@ -83,7 +82,7 @@ internal class Printer(private val source: Any?) {
         return this
     }
 
-    private fun <T : Map.Entry<*, *>> printMap(it: Iterator<T>): Printer {
+    fun <T : Map.Entry<*, *>> printMap(it: Iterator<T>): Printer {
         s.append("Map[")
         var first = true
         try {

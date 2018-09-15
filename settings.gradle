@@ -1,1 +1,1 @@
-include ':sample', 'drake-core'
+include ':sample', 'drake-core', 'drake-android'

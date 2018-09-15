@@ -1,13 +1,12 @@
 package com.drake.logging.inspect
 
 import java.util.*
-import java.util.function.BiConsumer
 
 internal object ObjectInspector {
 
     internal val handlers = ArrayList<Handler<*>>()
 
-    fun <T> register(clazz: Class<T>, mapper: BiConsumer<Printer, T>) {
+    fun <T> register(clazz: Class<T>, mapper: (Printer, T) -> (Unit)) {
         handlers.add(Handler(clazz, mapper))
     }
 

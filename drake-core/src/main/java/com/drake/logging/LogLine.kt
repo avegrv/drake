@@ -1,10 +1,10 @@
 package com.drake.logging
 
-internal data class LogLine(
-        private val timestamp: Long,
-        private val level: Int,
-        private val tag: String,
-        private val message: String,
-        private val throwable: Throwable?,
-        private val formatArgs: List<Any>
+data class LogLine(
+        val timestamp: Long,
+        val level: Int,
+        val tag: String,
+        val message: String,
+        val throwable: Throwable?,
+        val formatArgs: List<Any>?
 )

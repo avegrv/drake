@@ -2,7 +2,7 @@ apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
 dependencies {
-    def deps = rootProject.ext.libDependencies
+    def deps = rootProject.ext.coreDeps
 
     implementation deps.kotlin
 

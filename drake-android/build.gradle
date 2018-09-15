@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
-
 android {
     def mainConfig = rootProject.ext
 
@@ -26,9 +25,12 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def deps = rootProject.ext.androidLibDeps
 
-    def deps = rootProject.ext.libDependencies
+    implementation project(":drake-core")
 
     implementation deps.kotlin
+    implementation deps.gson
+
+    testImplementation deps.junit
 }

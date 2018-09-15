@@ -9,15 +9,26 @@ ext {
     // Google
     supportLibraryVersion = '25.3.1'
 
-    // View
-    constraintLayoutVersion = '1.0.2'
-
     // Test
     junitVersion = '4.12'
 
-    libDependencies = [
+    // Gson
+    gsonVersion = '2.7'
+
+    coreDeps = [
             // Kotlin
             kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+
+            // Test
+            junit             : "junit:junit:$junitVersion"
+    ]
+
+    androidLibDeps = [
+            // Kotlin
+            kotlin            : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+
+            // Gson
+            gson              : "com.google.code.gson:gson:$gsonVersion",
 
             // Test
             junit             : "junit:junit:$junitVersion"
